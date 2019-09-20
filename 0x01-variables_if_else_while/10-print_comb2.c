@@ -17,7 +17,7 @@ for (ph = '0'; ph <= '9'; ph++)
 {
 putchar(ch);
 putchar(ph);
-if (ch == '9'&& ph =='9')
+if (ch == '9' && ph == '9')
 {
 }
 else

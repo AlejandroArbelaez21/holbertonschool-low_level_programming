@@ -1,28 +1,18 @@
 #include "holberton.h"
 /**
- * print_sign - writes the character n to stdout
+ * print_last_digit - writes the character n to stdout
  * @n: The character to print
  *
  * Return: On success 1.
  * On error, -1 is returned, and errno is set appropriately.
  */
-int print_last_digit(int)
+int print_last_digit(int n)
 {
-int n, l;
-l = n % 10;
-if (n > 0)
+n = n % 10;
+if (n < 0)
 {
-        _putchar ('+');
-        return (1);
+n = n * -1;
 }
-else if (n < 0)
-{
-        _putchar ('-');
-        return (-1);
-}
-else
-{
-        _putchar ('0');
-        return (0);
-}
+_putchar ('0' + n);
+return (n);
 }

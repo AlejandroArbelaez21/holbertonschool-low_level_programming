@@ -1,8 +1,9 @@
 #include "holberton.h"
 /**
- * main - Entry point
+ * print_alphabet_x10 - writes the character x to stdout x10
  *
- * Return: Always 0 (Success)
+ * Return: On success 1.
+ * On error, -1 is returned, and errno is set appropriately.
  */
 void print_alphabet_x10(void)
 {

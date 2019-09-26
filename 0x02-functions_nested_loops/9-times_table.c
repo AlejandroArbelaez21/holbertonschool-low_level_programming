@@ -7,21 +7,16 @@
  */
 void times_table(void)
 {
-char a, b;
+char a, b, c;
 for (a = '0'; a <= '9'; a++)
-{
+	{
 	for (b = '0'; b <= '9'; b++)
-	_putchar(b);
-	if (a == '9' && b == '9')
-	{
-	}
-	else
-	{
-	_putchar(',');
-        _putchar(' ');
-        _putchar(' ');
-	}
-_putchar('\n');
+	c = (a * b)
+_putchar (c);
+_putchar (',')
+_putchar (' ')
+_putchar (' ')
+_putchar ('\n');
 	}
 return;
 }

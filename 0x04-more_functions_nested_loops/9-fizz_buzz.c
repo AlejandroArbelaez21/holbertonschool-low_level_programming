@@ -32,9 +32,9 @@ for (a = 1; a <= 100; a++)
 	}
 	else
 	{
-	printf("%d", a);
+	printf("%d ", a);
 	}
-	}
+}
 	putchar ('\n');
 return (0);
 }

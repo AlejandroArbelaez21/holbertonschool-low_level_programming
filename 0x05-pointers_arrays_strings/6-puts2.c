@@ -12,7 +12,7 @@ int a, b;
 for (a = 0; str[a] != '\0'; a++)
 {
 }
-for (b = 0; b <= a; b++)
+for (b = 0; b <= a - 1; b++)
 	{
 _putchar(str[b]);
 b++;

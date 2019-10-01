@@ -14,6 +14,6 @@ for (y = 0; *str != '\0'; y++)
 _putchar(*str);
 str++;
 	}
-_putchar('\n')
+_putchar('\n');
 }
 

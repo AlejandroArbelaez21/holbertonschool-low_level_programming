@@ -2,7 +2,8 @@
 #include <stdio.h>
 /**
  * print_array - writes the character c to stdout
- * @str: The character to print
+ * @a: The character to print
+ * @n: The character to print
  *
  * Return: On success 1.
  * On error, -1 is returned, and errno is set appropriately.
@@ -13,7 +14,7 @@ int x;
 for (x = 0; x < n; x++)
 	{
 	printf("%d", a[x]);
-	if (x < - 1)
+	if (x < n - 1)
 		{
 		printf(", ");
 		}

@@ -13,11 +13,11 @@ for (a = 0; str[a] != '\0'; a++)
 {
 }
 if (a % 2 == 0)
-	for (b = a / 2; b <= a - 1; b++)
 		{
-		_putchar (str[a]);
+	for (b = a / 2; b <= a - 1; b++)
+		_putchar (str[b]);
 		}
-		else
+else
 		{
 	for (b = ((a + 1) / 2); b <= a - 1; b++)
 		_putchar (str[b]);

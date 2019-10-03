@@ -35,11 +35,10 @@ for (b = 0; b < n && src[b] != '\0'; b++)
 	{
 dest [b] = src[b];
 	}
-dest [a + b] = '\0';
-
 for ( ; b < n; b++)
 	{
 	dest[b] = '\0';
 	}
+dest [a] = '\0';
 return (dest);
 }

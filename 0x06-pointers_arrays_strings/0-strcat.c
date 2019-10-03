@@ -1,7 +1,7 @@
 #include "holberton.h"
 /**
- * reset_to_98 - writes the character c to stdout
- * @n: The character to print
+ * _strlen - writes the character c to stdout
+ * @s: The character to print
  *
  * Return: On success 1.
  * On error, -1 is returned, and errno is set appropriately.
@@ -23,12 +23,12 @@ char *_strcat(char *dest, char *src)
 int a = _strlen(dest);
 int b;
 
-for (b = 0; src[b] != '\0'; b ++)
+for (b = 0; src[b] != '\0'; b++)
 	{
-dest[a+b] = src [b];
+dest[a + b] = src[b];
 	}
 
-dest[a+b] = '\0';
+dest[a + b] = '\0';
 
 return (dest);
 }

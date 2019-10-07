@@ -16,8 +16,5 @@ for (x = 0; accept[x] != '\0'; x++)
 	if (s[i] == accept[x])
 	return (s + i);
 	}
-if (s[i] == accept[i])
-return (s + i);
-else
 return ('\0');
 }

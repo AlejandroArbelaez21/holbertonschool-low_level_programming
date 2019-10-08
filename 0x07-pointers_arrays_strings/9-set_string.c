@@ -1,7 +1,8 @@
 #include "holberton.h"
 /**
- * print_chessboard - writes the character c to stdout
- * @a: The character to print
+ * set_string - writes the character c to stdout
+ * @s: The character to print
+ * @to: character to print
  *
  * Return: On success 1.
  * On error, -1 is returned, and errno is set appropriately.

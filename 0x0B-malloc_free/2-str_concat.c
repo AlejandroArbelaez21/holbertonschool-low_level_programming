@@ -1,8 +1,9 @@
 #include "holberton.h"
 #include <stdlib.h>
 /**
- * _strdup - writes the character n to stdout
- * @str: Size character to print
+ * *str_concat - writes the character n to stdout
+ * @s1: Size character to print
+ * @s2: Size character to print
  *
  * Return: On success 1.
  * On error, -1 is returned, and errno is set appropriately.

@@ -23,9 +23,10 @@ if (c == NULL)
 	{
 	return (NULL);
 	}
-for (b = 0; b <= a; b++)
+for (b = 0; b < a; b++)
 	{
 	c[b] = str[b];
 }
+c[a] = '\0';
 return (c);
 }

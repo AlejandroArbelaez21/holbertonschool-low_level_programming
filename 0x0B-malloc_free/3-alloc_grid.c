@@ -38,8 +38,9 @@ for (c = 0; c < height; c++)
 }
 for (f = 0; f < height; f++)
 	{
-	free (x[f]);
+	free(x[f]);
 	}
+	free(x);
 for (i = 0; i < height; i++)
 {
 	for (a = 0; a < width; a++)

@@ -16,6 +16,7 @@ int **x;
 		{
 		return (NULL);
 		}
+x = NULL;
 x = malloc(height * sizeof(int *));
 	if (x == NULL)
 		{

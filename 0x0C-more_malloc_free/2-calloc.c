@@ -11,15 +11,19 @@
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
 int *a;
+unsigned int x;
 if (nmemb == 0 || size == 0)
 	{
 	return (NULL);
 	}
+for (x = 0; x < nmemb; x++)
+	{
 a = 0;
-a = malloc(nmemb * sizeof(size));
+a = malloc(x * sizeof(size));
 	if (a == NULL)
 	{
 	return (NULL);
+	}
 	}
 return (a);
 }

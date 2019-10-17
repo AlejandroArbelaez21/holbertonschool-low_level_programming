@@ -17,7 +17,7 @@ if (nmemb == 0 || size == 0)
 	return (NULL);
 	}
 a = NULL;
-a = malloc(nmemb * sizeof(size));
+a = malloc(nmemb * size);
 	if (a == NULL)
 	{
 	return (NULL);

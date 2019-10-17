@@ -16,15 +16,15 @@ if (nmemb == 0 || size == 0)
 	{
 	return (NULL);
 	}
-a = 0;
+a = NULL;
 a = malloc(nmemb * sizeof(size));
 	if (a == NULL)
 	{
 	return (NULL);
 	}
 for (x = 0; x < nmemb * size; x++)
-        {
-        a[x] = 0;
-        }
+	{
+	a[x] = 0;
+	}
 return (a);
 }

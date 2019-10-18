@@ -1,31 +1,49 @@
 #include "holberton.h"
 #include <stdlib.h>
 /**
- * _strdup - writes the character n to stdout
- * @str: Size character to print
+ * *_realloc - writes the character n to stdout
+ * @ptr: Size character to print
+ * @old_size: size old of malloc
+ * @new_size: size new of malloc
  *
  * Return: On success 1.
  * On error, -1 is returned, and errno is set appropriately.
  */
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 {
-int *a;
+char *a;
+int x, i;
 if (new_size > old_size)
 	{
-	return (NULL);
+	x = old_size;
 	}
-{
+else
+	{
+	x = new_size;
+	}
 if (new_size == old_size)
 	{
-	}
 return (ptr);
-}
+	}
+if (new_size == 0 && ptr != NULL)
+	{
+	free(ptr);
+	return (NULL);
+	}
 a = NULL;
-a = malloc(ptr * sizeof(int));
-	if (a = NULL)
+a = malloc(new_size);
+	if (a == NULL)
 	{
 	return (NULL);
 	}
-free(a);
-return(a);
+	if (ptr == NULL)
+	{
+	return (a);
+	}
+for (i = 0; i < x; i++)
+	{
+	a[i] = ((char *) ptr)[i];
+	}
+free(ptr);
+return (a);
 }

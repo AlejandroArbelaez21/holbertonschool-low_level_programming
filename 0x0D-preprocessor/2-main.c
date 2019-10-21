@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
- *  - writes the character n to stdout
- * @b: Size character to print
+ *  main - writes the character n to stdout
+ *
  *
  *
  * Return: On success 1.
@@ -9,6 +9,6 @@
  */
 int main(void)
 {
-printf ("%s\n", __FILE__);
+printf("%s\n", __FILE__);
 return (0);
 }

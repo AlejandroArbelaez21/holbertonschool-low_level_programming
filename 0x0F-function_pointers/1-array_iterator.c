@@ -1,5 +1,5 @@
-#include "function_pointers.h"
 #include <stdio.h>
+#include "function_pointers.h"
 /**
  * array_iterator - writes the character n to stdout
  * @array: Array
@@ -11,7 +11,7 @@
  */
 void array_iterator(int *array, size_t size, void (*action)(int))
 {
-unsigned int y;
+size_t y;
 if (array == NULL || size == 0 || action == NULL)
 	{
 	return;

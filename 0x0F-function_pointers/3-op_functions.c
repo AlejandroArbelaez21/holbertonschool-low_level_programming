@@ -1,4 +1,6 @@
 #include "3-calc.h"
+#include <stdio.h>
+#include <stdlib.h>
 /**
  * op_add - writes the character n to stdout
  * @a: First number
@@ -52,6 +54,11 @@ return (mul);
 int op_div(int a, int b)
 {
 int div;
+	if (a == 0 || b == 0)
+	{
+	printf("Error\n");
+	exit(100);
+	}
 div = (a / b);
 return (div);
 }
@@ -66,6 +73,11 @@ return (div);
 int op_mod(int a, int b)
 {
 int mod;
+	if (a == 0 || b == 0)
+	{
+	printf("Error\n");
+	exit(100);
+	}
 mod = (a % b);
 return (mod);
 }

@@ -29,7 +29,7 @@ char *x = va_arg(ap, char*);
 		{
 		printf("(nil)");
 		}
-	if (i < (n - 1))
+	if (i < (n - 1) && separator != NULL)
 		{
 		printf("%s", separator);
 		}

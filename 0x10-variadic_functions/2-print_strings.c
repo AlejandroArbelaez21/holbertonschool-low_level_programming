@@ -1,5 +1,6 @@
 #include <stdarg.h>
 #include <stdio.h>
+#include "variadic_functions.h"
 /**
  * print_strings - writes the character n to stdout
  * @n: element of the strings

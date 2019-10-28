@@ -48,6 +48,6 @@ while (format[i])
 	printf(", ");
 	i++;
 	}
-printf("\n");
 va_end(ap);
+printf("\n");
 }

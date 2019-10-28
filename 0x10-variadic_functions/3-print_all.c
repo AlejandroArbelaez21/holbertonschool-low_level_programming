@@ -16,6 +16,7 @@ char *s;
 va_start(ap, format);
 while (format == NULL)
 	{
+	return;
 	}
 while (format[i])
 	{

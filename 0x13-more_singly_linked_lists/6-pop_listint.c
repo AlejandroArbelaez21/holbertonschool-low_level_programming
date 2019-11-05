@@ -3,7 +3,7 @@
 #include "lists.h"
 
 /**
- * free_listint - writes the character n to stdout
+ * pop_listint - writes the character n to stdout
  * @head: head the node
  *
  * Return: On success 1.
@@ -13,11 +13,13 @@ int pop_listint(listint_t **head)
 {
 listint_t *tmp;
 int copy;
-copy = (*head)->n;
+
 if (*head == NULL)
 	{
 	return (0);
 	}
+
+copy = (*head)->n;
 tmp = *head;
 *head = (*head)->next;
 free(tmp);

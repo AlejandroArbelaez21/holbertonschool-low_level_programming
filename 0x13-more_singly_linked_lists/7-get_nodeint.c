@@ -15,6 +15,8 @@ unsigned int i = 0;
 
 if (head == NULL)
 	{
+	return (NULL);
+	}
 	tmp = head;
 	while (tmp != NULL)
 	{
@@ -25,6 +27,5 @@ if (head == NULL)
 	i++;
 	tmp = tmp->next;
 	}
-	}
-return (NULL);
+return (tmp);
 }

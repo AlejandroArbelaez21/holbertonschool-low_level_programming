@@ -2,9 +2,10 @@
 #include <stdlib.h>
 #include "lists.h"
 /**
- * add_nodeint - writes the character n to stdout
+ * insert_nodeint_at_index - writes the character n to stdout
  * @n: element of the structure
  * @head: head the node
+ * @idx: is the index of the list where the new node should be added.
  *
  * Return: On success 1.
  * On error, -1 is returned, and errno is set appropriately.
@@ -30,11 +31,12 @@ if (idx == 0)
 	new_node->next = *head;
 	*head = new_node;
 	}
-	while (i < idx && *head != NULL)
+	while (i <= idx && tmp != NULL)
 		{
-		if (i[+ 1] == idx)
+		if (i == idx)
 			{
-			return (0);
+			new_node->next = tmp->next;
+			tmp->next = new_node;
 			}
 		i++;
 		}

@@ -17,10 +17,10 @@ if (head == NULL)
 	return;
 	}
 
-while (head != NULL)
+tmp = *head;
+while (tmp)
         {
-	tmp = *head;
-	*head = (*head)->next;
+	*head = tmp->next;
 	free(tmp);
 	}
 *head = NULL;

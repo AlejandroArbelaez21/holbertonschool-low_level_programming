@@ -20,15 +20,15 @@ int fd, i;
 for (i = 0; text_content[i] != '\0'; i++)
 	{
 	}
+if (filename == NULL)
+        {
+        return (-1);
+        }
 fd = open(filename, O_CREAT | O_TRUNC | O_RDWR, 0600);
 	if (fd == -1)
 		{
 		return (-1);
 		}
-if (filename == NULL)
-	{
-	return (-1);
-	}
 if (text_content == NULL)
 	{
 	return (1);

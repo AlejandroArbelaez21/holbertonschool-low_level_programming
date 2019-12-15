@@ -14,6 +14,7 @@ while (h)
 	{
 	if (h->n == '\0')
 		{
+		return (x);
 		}
 	else
 		{

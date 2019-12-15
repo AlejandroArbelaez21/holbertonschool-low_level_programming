@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include "lists.h"
 /**
- * get_nodeint_at_index - writes the character n to stdout
+ * get_dnodeint_at_index - writes the character n to stdout
  * @head: head the node
  * @index: is the index of the node
  *

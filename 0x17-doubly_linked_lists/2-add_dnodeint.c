@@ -15,7 +15,7 @@ dlistint_t *new_node;
 
 if (head == NULL)
 	{
-	return (NULL)
+	return (NULL);
 	}
 new_node = malloc(sizeof(dlistint_t));
 if (new_node == NULL)

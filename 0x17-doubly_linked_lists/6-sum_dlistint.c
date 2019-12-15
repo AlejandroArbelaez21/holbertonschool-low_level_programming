@@ -1,3 +1,5 @@
+#include <stdio.h>
+#include <stdlib.h>
 #include "lists.h"
 /**
 * sum_dlistint - prints all the elements of the list.
@@ -17,7 +19,7 @@ if (head == NULL)
 while (tmp != NULL)
 	{
 	sum = sum + tmp->n;
-	tmp->next = tmp;
+	tmp = tmp->next;
 	}
 return (sum);
 }

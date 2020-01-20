@@ -24,7 +24,7 @@ if (new_hash == NULL)
 	}
 new_hash->size = size;
 new_hash->array = NULL;
-new_hash->array = malloc(sizeof(hash_table_t) * size);
+new_hash->array = malloc(sizeof(hash_node_t) * size);
 if (new_hash->array == NULL)
 	{
 	free(new_hash);

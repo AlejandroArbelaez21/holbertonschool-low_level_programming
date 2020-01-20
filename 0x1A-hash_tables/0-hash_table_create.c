@@ -26,8 +26,8 @@ new_hash->size = size;
 new_hash->array = malloc(sizeof(hash_table_t) * size);
 if (new_hash->array == NULL)
 	{
+	free(new_hash);
 	return (NULL);
 	}
 return (new_hash);
 }
-

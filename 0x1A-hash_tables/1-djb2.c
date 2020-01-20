@@ -17,7 +17,7 @@ int c;
 new_hash = 5381;
 while ((c = *str++))
 	{
-	new_hash = ((new_hash << 5) + new_hash) + c; /* hash * 33 + c */
+	new_hash = (((new_hash << 5) + new_hash)+c);
 	}
 return (new_hash);
 }

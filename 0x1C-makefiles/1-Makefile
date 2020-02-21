@@ -1,7 +1,5 @@
-CC := gcc
-CC := ${CC}
-SRC := main.c holberton.c
-SRC := ${SRC}
+CC = gcc
+SRC = main.c holberton.c
 
 all:
-	${CC} ${SRC} -o holberton
+	$(CC) $(SRC) -o holberton

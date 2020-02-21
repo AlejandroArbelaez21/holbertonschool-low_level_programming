@@ -17,4 +17,4 @@ fclean:
 	$(RM) *~ $(NAME)
 	$(RM) $(OBJ)
 	
-re: oclena all
+re: oclean all

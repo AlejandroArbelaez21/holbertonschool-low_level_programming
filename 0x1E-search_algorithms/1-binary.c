@@ -20,9 +20,9 @@ unsigned int L = 0, R = size - 1, floor = 0, num;
 			printf("Searching in array: ");
 			for (num = L; num < R; num++)
 			{
-				printf("%d, ", num);
+				printf("%d, ", array[num]);
 			}
-			printf("%d\n", num);
+			printf("%d\n", array[num]);
 			floor = ((L + R) / 2);
 			if (array[floor] < value)
 			{

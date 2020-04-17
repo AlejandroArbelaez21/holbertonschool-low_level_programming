@@ -37,7 +37,6 @@ unsigned int L = 0, R = size - 1, floor = 0, num;
 				return (floor);
 			}
 		}
-	return (-1);
 	}
 return (-1);
 }
